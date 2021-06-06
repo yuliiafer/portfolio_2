@@ -1,0 +1,159 @@
+.containers-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+.img-form {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  .content-image-form {
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    width: 100px;
+    height: 100%;
+    border: 4px solid $colorWhite;
+  }
+}
+  .cards-form {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 0 $pageSpacing 0;
+    box-shadow: 0 4px 8px 0 rgba(12, 45, 65, 0.144), 0 6px 20px 0 rgba(10, 37, 59, 0.19);
+    border-radius: $border-radius;
+    background-image: linear-gradient(120deg, #e0c3fc3d 0%, #8ec5fc46 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: $border rgba(226, 235, 247, 0.7);
+    border-right: $border rgba(226, 235, 247, 0.7);
+    backdrop-filter: blur(5px);
+
+    &:last-of-type {
+      background: none;
+      border: none;
+      max-width: 400px;
+      margin-left: $pageSpacing;
+    }
+
+    .content-form {
+      padding: $pageSpacing;
+      text-align: left;
+      width: 100%;
+
+      .content-title-form {
+        font-size: 1.5em;
+        color: $colorTitle;
+        font-weight: 500;
+      }
+
+      .content-text-form {
+        text-align: left;
+        font-size: 1em;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .containers-form {
+    .cards-form {
+
+      &:first-of-type {
+        margin-right: 0;
+      }
+
+      .content-form {
+        padding: 10px;
+
+        .content-title-form {
+          font-size: 1.2em;
+          font-weight: 300;
+        }
+
+        .content-text-form {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+input {
+  width: 100%;
+  padding: 0 $pageSpacing 0 0;
+  border: none;
+  border-bottom: $border $colorTitle;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-bottom: $pageSpacing*2;
+  resize: vertical;
+}
+
+label {
+  padding-top: $pageSpacing;
+  color: $colorTitle;
+}
+
+.submit {
+  width: 100%;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  color: $colorWhite;
+  padding: $pageSpacing/2 $pageSpacing*2;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  margin-top: $pageSpacing*2;
+  box-shadow: 0 4px 8px 0 rgba(12, 45, 65, 0.144), 0 6px 20px 0 rgba(10, 37, 59, 0.19);
+
+  &:hover {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  }
+
+}
+
+.message {
+  height: $pageSpacing*6;
+}
+
+.circle1 {
+  background: white;
+  background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+  opacity: 0.2;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 10%;
+  right: 15%;
+}
+
+.circle2 {
+  background: white;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  opacity: 0.1;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 5%;
+  left: 10%;
+}
+
+.circle3 {
+  background: white;
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+  opacity: 0.2;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -15%;
+  right: 26%;
+}

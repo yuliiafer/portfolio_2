@@ -1,0 +1,27 @@
+.sectionwrapper {
+  max-width: $pageWidth;
+  padding: $pageSpacing;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+ 
+  &__column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: $border $colorTitle;
+  }
+
+  &__title {
+    color: $colorTitle;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width : 1000px) {
+  .sectionwrapper {
+    &__column {
+      display: block;
+    }
+  }
+}

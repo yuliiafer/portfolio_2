@@ -1,0 +1,37 @@
+.nav-item {
+  margin: $pageSpacing/2;
+  margin-bottom: $pageSpacing;
+  &:active {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    border-radius: $border-radius !important;
+  }
+
+  .nav-link {
+    box-shadow: 0 4px 8px 0 rgba(12, 45, 65, 0.144), 0 6px 20px 0 rgba(10, 37, 59, 0.19);
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    border-radius: $border-radius !important;
+    color: rgb(106, 255, 255);
+padding: $pageSpacing/2 $pageSpacing;
+    &:active {
+      color: $colorWhite;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+.button1 {
+  padding: $pageSpacing/2 $pageSpacing*6;
+  box-shadow: 0 4px 8px 0 rgba(12, 45, 65, 0.144), 0 6px 20px 0 rgba(10, 37, 59, 0.19);
+  width: 300px;
+  border-radius: $border-radius;
+  background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  border: none;
+  text-decoration: none;
+  color: $colorWhite;
+  
+  &:hover {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    color: $colorWhite;
+    text-decoration: none;
+  }
+}

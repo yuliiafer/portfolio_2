@@ -1,0 +1,226 @@
+@charset "UTF-8";
+.slick-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cardS {
+  position: relative;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  overflow: visible;
+  width: 330px;
+  margin: 0 10px;
+}
+
+.cardS .imgS {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  margin-bottom: 30px;
+  -webkit-box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.05);
+          box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.05);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cardS .imgS img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.contentS {
+  position: relative;
+  color: #171717;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  padding: 0 20px 20px;
+}
+
+.contentS div.descriptionS {
+  text-align: justify;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.contentS div.descriptionS p {
+  font-size: 14px;
+}
+
+.contentS div.descriptionS p b {
+  font-size: 14px;
+}
+
+.moreBtn {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-decoration: underline;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  cursor: pointer;
+}
+
+.titleS {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Proxima Nova Black", sans-serif;
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.titleS + a {
+  text-transform: none;
+}
+
+.titleS:after,
+.titleSmall:after {
+  display: block;
+  background-color: #00af98;
+  content: "";
+  width: 15px;
+  height: 4px;
+  position: absolute;
+  top: -11px;
+}
+
+.cardS.active {
+  width: 330px;
+}
+
+.cardS.active .contentS {
+  position: absolute;
+  width: 130%;
+  left: 50%;
+  bottom: -90px;
+  padding: 32px 32px 20px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+  background-color: #fff;
+  -webkit-box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.05);
+          box-shadow: -14.444px 19.167px 27px 0px rgba(23, 23, 23, 0.05);
+}
+
+.cardS.active .contentS div.descriptionS {
+  line-height: 1.15;
+  opacity: 1;
+  max-height: 215px;
+  padding-top: 10px;
+}
+
+.cardS.active .contentS .moreBtn {
+  color: #919a9d;
+}
+
+.cardS.active .imgS {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .cardS .contentS a,
+  .cardS.lifted .contentS a {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardS,
+  .cardS.active {
+    width: 65vw;
+    margin: 0 0 0 20px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .cardS .imgS,
+  .cardS.active .imgS {
+    height: 71.5vw;
+    margin-bottom: 20px;
+  }
+  .cardS .contentS,
+  .cardS.active .contentS {
+    padding: 0;
+    width: unset;
+    left: unset;
+    bottom: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    background: none;
+    position: relative;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+  }
+  .cardS .contentS .descriptionS,
+  .cardS.active .contentS .descriptionS {
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+  }
+  .cardS .contentS .titleS,
+  .cardS.active .contentS .titleS {
+    margin-bottom: 0;
+  }
+}
+
+.tip {
+  zoom: 0.8;
+  z-index: -1;
+  opacity: 0;
+  max-width: 625px;
+  width: 115%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+  top: 605px;
+  left: 0;
+  -webkit-transform: translateX(-7.5%) translateY(-100%);
+          transform: translateX(-7.5%) translateY(-100%);
+  -webkit-box-shadow: 0px 4px 27px 0px rgba(23, 23, 23, 0.52);
+          box-shadow: 0px 4px 27px 0px rgba(23, 23, 23, 0.52);
+  background-color: #f6f6f6;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.tip p {
+  margin-bottom: 20px;
+}
+
+.tip ul li {
+  list-style-type: "–  ";
+  margin-bottom: 20px;
+}
+
+.tip.activeS {
+  z-index: 5;
+  opacity: 1;
+}
+
+.tip img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=slider.css.map */

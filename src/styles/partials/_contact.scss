@@ -1,0 +1,22 @@
+.contact {
+
+  h3 {
+    color: $colorTitle;
+    font-family: $fontTitle;
+  }
+  p {
+    font-family: $fontText;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .contact {
+    text-align: left;
+
+    h3 {
+      text-align: left;
+    }
+  }
+}
+

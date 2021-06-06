@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Proxima Nova Regular", Arial, sans-serif;
+}
+
+html,
+body {
+  background-image: linear-gradient(45deg, #d1dfff11 0%, #f4f8ff21 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  font-size: 2em;
+}
+
+.wrapper {
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+}

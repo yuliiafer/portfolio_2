@@ -1,0 +1,19 @@
+.header-about {
+  background-image: url(../../image/book.jpg);
+  z-index: 2;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: $pageSpacing;
+  padding-left: 0;
+  background-size: cover;
+  height: 400px;
+
+  .title {
+    text-align: center;
+    color: $colorWhite;
+    font-family: $fontTitle;
+  }
+}
