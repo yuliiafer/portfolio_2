@@ -121,7 +121,7 @@ const Icon = styled.button`
     cursor: pointer;
   }
 `;
-
+/*
 let Active = css`
     opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
     transform: scale(${({ isOpen }) => (isOpen ? 1 : 0)});
@@ -139,7 +139,7 @@ let Active = css`
     width: 400px;
     height: 400px;
     border-radius: 33px;
-`;
+`;*/
 
 const sharedAll = css`
   position: absolute;

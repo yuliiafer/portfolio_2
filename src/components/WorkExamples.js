@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import holidaze from "../image/holidaze.png";
 import got from "../image/got.png";
 import coctails from "../image/coctails.png";
@@ -31,7 +30,7 @@ const WorkExamples = () => {
         <Mov>
           <motion.h2 variants={fade}>Game of Thrones</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="https://got.y-ferreira.eu/">
+          <a href="https://got.y-ferreira.eu/" target="_blank" rel="noreferrer">
             <Hide>
               <motion.img
                 variants={photo}
@@ -40,48 +39,48 @@ const WorkExamples = () => {
                 className="imgWork"
               />
             </Hide>
-          </Link>
+          </a>
         </Mov>
 
         <Mov ref={el} variants={fade} animate={control} initial="hidden">
           <h2>Holidaze</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="https://holidaze1.vercel.app/">
+          <a href="https://holidaze1.vercel.app/" target="_blank" rel="noreferrer">
             <img src={holidaze} alt="holidaze" className="imgWork" />
-          </Link>
+          </a>
         </Mov>
         <Mov>
           <motion.h2 variants={fade}>Coctails API</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="https://tasks.y-ferreira.eu/">
+          <a href="https://tasks.y-ferreira.eu/" target="_blank" rel="noreferrer">
             <img src={coctails} alt="coctails" className="imgWork" />
-          </Link>
+          </a>
         </Mov>
         <Mov>
           <motion.h2 variants={fade}>Example of portfolio</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
 
-          <Link to="https://dark.y-ferreira.eu/">
+          <a href="https://dark.y-ferreira.eu/" target="_blank" rel="noreferrer">
             <img src={bootstrap} alt="bootstrap" className="imgWork" />
-          </Link>
+          </a>
         </Mov>
         <Mov>
           <motion.h2 variants={fade}>Countries API</motion.h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
 
-          <Link to="https://js-frameworks-module-assignment-4-yuliiafer.vercel.app/">
+          <a href="https://js-frameworks-module-assignment-4-yuliiafer.vercel.app/" target="_blank" rel="noreferrer">
             <img src={flag} alt="countries" className="imgWork" />
-          </Link>
+          </a>
         </Mov>
         <Mov ref={el2} variants={fade} animate={control2} initial="hidden">
-          <h2>Portfolio</h2>
+          <h2>Portfolio old</h2>
           <motion.div variants={lineAnim} className="line"></motion.div>
-          <Link to="https://portfolio-old.y-ferreira.eu/">
-            <img src={port} alt="portfolio" className="imgWork" />
-          </Link>
+          <a href="https://portfolio-old.y-ferreira.eu/" target="_blank" rel="noreferrer">
+            <img src={port} alt="portfolio old" className="imgWork" />
+          </a>
         </Mov>
         <Scroll />
-      </Work>
+      </Work>y
     </div>
   );
 };
