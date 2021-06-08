@@ -125,7 +125,7 @@ export const Description = styled.div`
   padding-right: 5rem;
   z-index: 2;
   h2 {
-    font-weight: lighter;
+    font-weight: bold;
   }
   @media (max-width: 1300px) {
     padding: 0;
@@ -154,9 +154,6 @@ export const Img = styled.div`
       top: 5%;
       height: 25vh;
     }
-    @media (max-width: 450px) {
-      display: none;
-    }
   }
 `;
 export const Image = styled.div`
@@ -176,8 +173,8 @@ export const Image = styled.div`
       right: 5%;
       top: 45%;
     }
-    @media (max-width: 450px) {
-      display: none;
+    @media (max-width: 350px) {
+      height: 35vh;
     }
   }
 `;

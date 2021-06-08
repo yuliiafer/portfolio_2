@@ -9,7 +9,7 @@ const Cards = () => {
           <Card.Img
             className="cardimg"
             variant="top"
-            src="images/light2.jpg"
+            src="images/office.jpg"
             alt="education"
             width="500px"
           />
