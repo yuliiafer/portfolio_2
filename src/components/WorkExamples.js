@@ -63,11 +63,11 @@ const WorkExamples = () => {
 };
 
 const Work = styled(motion.div)`
-  min-height: 100vh;
+  min-height: 50vh;
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 1rem;
   @media (max-width: 1300px) {
-    padding: 2rem 2rem;
+    padding: 1rem;
   }
 
   h2 {
@@ -75,7 +75,7 @@ const Work = styled(motion.div)`
   }
 `;
 const Mov = styled(motion.div)`
-  padding-bottom: 10rem;
+  padding-bottom: 1rem;
 
   .line {
     height: 0.2rem;
