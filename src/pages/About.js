@@ -6,7 +6,7 @@ function About() {
   return (
     <>
       <AboutSection />
-<WorkExamples />
+      <WorkExamples />
       <TabSection />
     </>
   );

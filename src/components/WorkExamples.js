@@ -16,7 +16,7 @@ import Scroll from "../components/Scroll";
 const WorkExamples = () => {
   const [el, control] = useScroll();
   const [el2, control2] = useScroll();
-  return (
+  return ( <div className="container">
     <Work
       style={{ background: "#ffffff" }}
       exit="exit"
@@ -24,6 +24,7 @@ const WorkExamples = () => {
       initial="hidden"
       animate="show"
     >
+     
       <Mov>
         <motion.h2 variants={fade}>Game of Thrones</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -54,8 +55,10 @@ const WorkExamples = () => {
           <img src={coctails} alt="coctails" className="imgWork" />
         </Link>
       </Mov>
+      
       <Scroll />
     </Work>
+    </div>
   );
 };
 
