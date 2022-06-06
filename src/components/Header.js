@@ -13,7 +13,7 @@ import {
   RiGithubFill,
 } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
-import bilde from "../image/bilde.png";
+import yf from "../image/me.png";
 
 function Header() {
   return (
@@ -43,7 +43,7 @@ function Header() {
                 <motion.img
                   variants={photo}
                   className="block"
-                  src={bilde}
+                  src={yf}
                   alt="portfolioimage"
                 />
               </Image>
@@ -162,6 +162,7 @@ export const Image = styled.div`
   overflow: hidden;
   max-width: 100%;
   img {
+    z-index: 2;
     height: 80vh;
     object-fit: cover;
     max-width: 100%;

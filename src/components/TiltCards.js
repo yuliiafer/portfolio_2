@@ -7,7 +7,7 @@ function TiltCards() {
     <>
       <div className="containers">
         {" "}
-        <motion.div variants={photo2} key="card1">
+
           <Tilt
             className="cards"
             options={{
@@ -26,13 +26,17 @@ function TiltCards() {
               <h3 className="content-title">About Me</h3>
               <p className="content-text">
                 {" "}
-                Hi, my name is Yuliia and I am studing “Front end development”
-                at “Noroff” in Bergen. I love design, coding and creativity.
+                <p>
+                Hi, my name is Yuliia.</p>
+                <p>
+                I am an UI Designer and Front-end Developer. 
+                
+                I love design, coding and creativity.</p>
               </p>
             </div>
           </Tilt>
-        </motion.div>
-        <motion.div variants={photo2} key="card2">
+
+
           <Tilt
             className="cards"
             options={{
@@ -55,8 +59,8 @@ function TiltCards() {
               </p>
             </div>
           </Tilt>
-        </motion.div>
-        <motion.div variants={photo2} key="card3">
+
+
           <Tilt
             className="cards"
             options={{
@@ -79,7 +83,7 @@ function TiltCards() {
               </p>
             </div>
           </Tilt>
-        </motion.div>
+
       </div>
     </>
   );
